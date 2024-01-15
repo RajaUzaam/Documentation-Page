@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Python Documentation</title>
+        <style>
+          body, a, textarea {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+          }
+          header {
+              font-size: x-large;
+              padding: 20px;
+          }
+          nav {
+              display: block;
+              height: 100%;
+              border-right:solid black 2px;
+              position: fixed;
+          }
+          nav ul {
+              padding-left: 0px;
+              justify-content: space-evenly;
+          }
+          nav li {
+              padding: 20px;
+              border-bottom: solid black 1px;
+          }
+          #navbar a:hover {color:aqua;}
+          .nav-link {
+              margin: 0;
+              text-decoration: none;
+              font-size: 22px;
+          }
+          
+          #main-doc {
+              margin-left: 320px;
+          }
+          .main-section p {
+              color:rgb(71, 71, 71);
+              padding-left: 30px;
+          }
+          textarea, form {
+              resize: vertical;
+              width: 80%;
+              height: 60px;
+              padding-left: 30px;
+              color: rgb(71, 71, 71);
+          }
+          .code {
+              padding: 30px;
+              margin: 30px;
+              background-color: gainsboro;
+              border-radius: 20px;
+          }
+          .main-section a {color: aqua;}
+          img {display: inline;}
+          
+          @media screen and (max-width: 480px) {
+              body {
+                  background-color: aquamarine;
+              }
+}
+        </style>
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>Python Documentation</header>
+            <ul>
+                <li style="border-top: solid black 1px;"><a href="#Introduction" class="nav-link">Introduction</a></li>
+                <li><a href="#Variables" class="nav-link">Variables</a></li>
+                <li><a href="#Data_Types" class="nav-link">Data Types</a></li>
+                <li><a href="#Conditional_Statements" class="nav-link">Conditional Statements</a></li>
+                <li><a href="#Loops" class="nav-link">Loops</a></li>
+                <li><a href="#Functions" class="nav-link">Functions</a></li>
+                <li><a href="#Reference" class="nav-link">Reference</a></li>
+                <li><a href="#Suggestions" class="nav-link">Suggestions</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.
+                    Guido van Rossum began working on Python in the late 1980s as a successor to the ABC programming language and first released it in 1991 as Python 0.9.0.
+                    <b>Python consistently ranks as one of the most popular programming languages.</b>
+                </p>
+                <div style="margin-left: 100px;">
+                <img src="https://images.ctfassets.net/mrop88jh71hl/55rrbZfwMaURHZKAUc5oOW/9e5fe805eb03135b82e962e92169ce6d/python-programming-language.png" alt="An Image of official Python Logo" width="30%" height="30%">
+                <img src="https://miro.medium.com/v2/resize:fit:1400/1*4wCtg4R7_gfbRr47oA6A3w.png" alt="An Image of official Python Logo" width="50%" height="50%">
+                <p style="margin-left: 50px;"><i>An Image of official Python Logo. Other picture shows some python code.</i></p></div>
+            </section>
+            <section class="main-section" id="Variables">
+                <header>Variables</header>
+                <p>Variables are containers for storing data values.</p>
+                <p>Python has no command for declaring a variable. A variable is created the moment you first assign a value to it.</p>
+                <div class="code">
+                    <code>
+                        x = 11<br>
+                        y = "Hello World!"<br>
+                        z = myFunc()
+                    </code>
+                </div>
+            </section>
+            <section class="main-section" id="Data_Types">
+                <header>Data Types</header>
+                <p>Variables can store data of different types, and different types can do different things.
+                    Python has the following data types built-in by default, in these categories:</p>
+                    <ul>
+                        <li><p>Text Type: <code>str</code></p></lis>
+                        <li><p>Numeric Types: <code>int, float, complex</code></p></li>
+                        <li><p>Sequence Types:	<code>list, tuple, range</code></p></li>
+                        <li><p>Mapping Type: <code>dict</code></p></li>
+                        <li><p>Set Types: <code>set, frozenset</code></p></li>
+                        <li><p>Boolean Type: <code>bool</code></p></li>
+                        <li><p>Binary Types: <code>bytes, bytearray, memoryview</code></p></li>
+                        <li><p>None Type: <code>NoneType</code></p></li>
+                    </ul>
+                <p>You can get the data type of any object by</p>
+                <div class="code">
+                    <code>
+                        x = 51<br>
+                        print(type(x))
+                    </code>
+                </div>
+                <p><i><code>print</code> statement in here is used to send outputs in python</i></p>
+            </section>
+            <section class="main-section" id="Conditional_Statements">
+                <header>Conditional Statements</header>
+                <p>Conditional statements are those statements where a hypothesis is followed by a conclusion. Python supports the usual logical conditions from mathematics. e.g.</p>
+                <div class="code">
+                    <code>
+                        a = 33<br>
+                        b = 200<br>
+                        if b > a:<br>
+                        &nbsp;&nbsp;print("b is greater than a")
+                    </code>
+                </div>
+                <p>Logical Operater Include.</p>
+                <ul>
+                    <li><p>Equals: <code>a == b</code></p></lis>
+                    <li><p>Not Equals: <code>a != b</code></p></li>
+                    <li><p>Greater Than:	<code>a > b</code></p></li>
+                    <li><p>Smaller Than: <code>a < b</code></p></li>
+                    <li><p>Greater Than Equal To: <code>a >= b</code></p></li>
+                    <li><p>Smaller Than Equal To: <code>a <= b</code></p></li>
+                </ul>
+            </section>
+            <section class="main-section" id="Loops">
+                <header>Loops</header>
+                <p>Loops are a programming element that repeat a portion of code a set number of times until the desired process is complete. For loop in python</p>
+                <div class="code">
+                    <code>
+                        fruits = ["apple", "banana", "cherry"]<br>
+                        for x in fruits:<br>
+                        &nbsp;&nbsp;print(x)
+                    </code>
+                </div>
+                <p>While loop in python.</p>
+                <div class="code">
+                    <code>
+                        i = 1<br>
+                        while i < 6:<br>
+                        &nbsp;&nbsp;print(i)<br>
+                        &nbsp;&nbsp;i += 1
+                    </code>
+                </div>
+                <p>Some important keywords used in python loops are, <code>break, continue, pass</code></p>
+            </section>
+            <section class="main-section" id="Functions">
+                <header>Functions</header>
+                <p>A function is a block of code which only runs when it is called. You can pass data, known as parameters, into a function. A function can return data as a result.
+                    In Python a function is defined using the <code>def</code> keyword
+                </p>
+                <div class="code">
+                    <code>
+                        def my_function():<br>
+                        &nbsp;&nbsp;print("Hello from a function")
+                    </code>
+                </div>
+                <p>Calling a function</p>
+                <div class="code">
+                    <code>
+                        print(my_function)
+                    </code>
+                </div>
+            </section>
+            <section class="main-section" id="Reference">
+                <header>Reference</header>
+                <p>Content in here was taken form this <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">Wikipedia Page</a></p>
+                <p>Content in here was taken form this <a href="https://www.w3schools.com/python/default.asp" target="_blank">W3Schools Page</a></p>
+                <p>To download python or learn more about it, you can visit <a href="https://www.python.org/" target="_blank">Python.org</a></p>
+            </section>
+            <section class="main-section" id="Suggestions">
+                <header>Suggestions</header>
+                <p>If if have any Suggestion for me to improve this Documentation then let me know!</p>
+                <form>
+                    <div id="Queries">
+                        <textarea placeholder="Write your Suggestions here..."></textarea>
+                    </div>
+                    <input type="submit" value="SUBMIT"/>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
